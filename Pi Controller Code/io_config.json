@@ -1,0 +1,419 @@
+{
+    "Audio_Squelch_Level": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+    ],
+    "Audio_Channel_Level": [
+        5,
+        5,
+        10,
+        10,
+        10,
+        10,
+        10,
+        9,
+        10,
+        9,
+        9,
+        10
+    ],
+    "Audio_Master_Level": [
+        11,
+        11,
+        10,
+        10,
+        15,
+        15
+    ],
+    "AnalogSync_List": [
+        "1280A",
+        "2328A",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "IO_List": [
+        "Video Switch CH1",
+        "Video Switch CH2",
+        "Video Switch CH3",
+        "Video Switch CH4",
+        "Video Switch CH5",
+        "Video Switch CH6",
+        "Video Switch CH7",
+        "Video Switch CH8",
+        "Video Switch CH9",
+        "Video Switch CH10",
+        "Video Switch CH11",
+        "Video Switch CH12",
+        "Video Switch CH13",
+        "Video Switch CH14",
+        "Video Switch CH15",
+        "Video Switch CH16",
+        "Video Switch PIP",
+        "Video Switch 4-Way",
+        "Video Switch 9-Way",
+        "Video Switch Select",
+        21,
+        22,
+        23,
+        24,
+        25,
+        "1280D",
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        "Ryde2",
+        "M0DTS",
+        "Ryde1",
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+    ],
+    "System_List": [
+        "Test Signal"
+    ],
+    "IO_Options": [
+        {
+            "Direction": "Input,Output",
+            "Enabled": "True,False",
+            "Location": "I2C_GPIO,AnalogSync,System",
+            "Output_Type": "Latch,Momentary"
+        }
+    ],
+    "VideoSwitchSettings": {
+        "mode2": 0,
+        "mode4": 0,
+        "default_QUAD": [
+            1,
+            2,
+            3,
+            9
+        ],
+        "default_NINEWAY": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "pip_toggle_enabled": 1,
+        "pip_toggle_time": 20
+    },
+    "OperatingModes": [
+        "Automatic",
+        "Hold",
+        "Manual"
+    ],
+    "OperatingMode": [
+        0
+    ],
+    "Inputs": [
+        {
+            "Associated_Port": "1",
+            "Audio_Channel": "1",
+            "Direction": "Input",
+            "Location": "AnalogSync",
+            "Name": "1280A"
+        },
+        {
+            "Associated_Port": "38",
+            "Audio_Channel": "2",
+            "Direction": "Input",
+            "Location": "I2C_GPIO",
+            "Name": "M0DTS"
+        },
+        {
+            "Associated_Port": "39",
+            "Audio_Channel": "3",
+            "Direction": "Input",
+            "Location": "I2C_GPIO",
+            "Name": "Ryde1"
+        },
+        {
+            "Associated_Port": "26",
+            "Audio_Channel": "4",
+            "Direction": "Input",
+            "Location": "I2C_GPIO",
+            "Name": "1280D"
+        },
+        {
+            "Associated_Port": "37",
+            "Audio_Channel": "5",
+            "Direction": "Input",
+            "Location": "I2C_GPIO",
+            "Name": "Ryde2"
+        }
+    ],
+    "Logic": [
+        {
+            "Input": "1280A",
+            "Output": "Video Switch CH4",
+            "State": "Enabled"
+        },
+        {
+            "Input": "Ryde1",
+            "Output": "Video Switch CH3",
+            "State": "Enabled"
+        },
+        {
+            "Input": "M0DTS",
+            "Output": "Video Switch CH2",
+            "State": "Enabled"
+        },
+        {
+            "Input": "1280D",
+            "Output": "Video Switch CH1",
+            "State": "Enabled"
+        },
+        {
+            "Input": "Ryde2",
+            "Output": "Video Switch CH5",
+            "State": "Enabled"
+        }
+    ],
+    "Outputs": [
+        {
+            "Associated_Port": "1",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH1",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "2",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH2",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "3",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH3",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "4",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH4",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "5",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH5",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "6",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH6",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "7",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH7",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "8",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH8",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "9",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH9",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "10",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH10",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "11",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH11",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "12",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH12",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "13",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH13",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "14",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH14",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "15",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH15",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "16",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch CH16",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "17",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch PIP",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "18",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch 4-Way",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "19",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch 9-Way",
+            "Output_Type": "Momentary"
+        },
+        {
+            "Associated_Port": "20",
+            "Direction": "Output",
+            "Location": "I2C_GPIO",
+            "Name": "Video Switch Select",
+            "Output_Type": "Momentary"
+        }
+    ],
+    "Timers": [
+        {
+            "Days": "1,2,3,4,5,6,7",
+            "Enabled": "True",
+            "Name": "1304 Tx",
+            "BeaconOn": "18:00",
+            "BeaconOff": "23:00",
+            "OperatingOn": "18:00",
+            "OperatingOff": "23:00",
+            "SignalActivated": "True"
+        },
+        {
+            "Days": "1,2,3,4,5,6,7",
+            "Enabled": "False",
+            "Name": "2440 Tx",
+            "BeaconOn": "18:00",
+            "BeaconOff": "23:00",
+            "OperatingOn": "18:00",
+            "OperatingOff": "23:00",
+            "SignalActivated": "True"
+        },
+        {
+            "Days": "1,2,3,4,5,6,7",
+            "Enabled": "True",
+            "Name": "3406 Tx",
+            "BeaconOn": "18:00",
+            "BeaconOff": "23:00",
+            "OperatingOn": "09:00",
+            "OperatingOff": "23:00",
+            "SignalActivated": "True"
+        },
+        {
+            "Days": "1,2,3,4,5,6,7",
+            "Enabled": "False",
+            "Name": "10060 Tx",
+            "BeaconOn": "18:00",
+            "BeaconOff": "23:00",
+            "OperatingOn": "18:00",
+            "OperatingOff": "23:00",
+            "SignalActivated": "True"
+        }
+    ],
+    "Display Settings": {
+        "Testcards": {
+            "Enabled": true,
+            "DisplayTime": "6"
+        },
+        "Activity": {
+            "Enabled": false
+        },
+        "Videos": {
+            "Enabled": false
+        },
+        "MetOfficeWx": {
+            "Enabled": true
+        },
+        "Banner": {
+            "Enabled": false,
+            "Text": "Merry Christmas all from the GB3KM Group"
+        }
+    },
+    "Remote Images": {
+        "Links": {
+            "F5LEN Tropo": {
+                "Enabled": true,
+                "link": "http:\/\/tropo.f5len.org\/wp-content\/tools\/Tropo\/maps\/09.png"
+            },
+            "F5LEN Tropo +24": {
+                "Enabled": true,
+                "link": "http:\/\/tropo.f5len.org\/wp-content\/tools\/Tropo\/maps\/24.png"
+            }
+        }
+    }
+}
